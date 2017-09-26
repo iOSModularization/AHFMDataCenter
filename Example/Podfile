@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AHFMDataCenter_Example' do
+  pod 'AHFMDataCenter', :path => '../'
+
+  target 'AHFMDataCenter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
