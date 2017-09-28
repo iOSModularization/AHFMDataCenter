@@ -10,19 +10,22 @@ import Foundation
 import AHDataModel
 
 
-public struct AHFMEpisode {
+public struct AHFMEpisode: Equatable {
     public var id:Int = 0
     public var showId:Int = 0
     public var duration:Double?
-    public var createdAt: String = ""
-    public var showTitle: String = ""
-    public var title: String = ""
-    public var detail: String = ""
-    public var audioURL: String = ""
-    public var buzzScore: Double = 0.0
-    public var showFullCover: String = ""
-    public var showThumbCover: String = ""
+    public var createdAt: String? = ""
+    public var showTitle: String? = ""
+    public var title: String? = ""
+    public var detail: String? = ""
+    public var audioURL: String? = ""
+    public var buzzScore: Double? = 0.0
+    public var showFullCover: String? = ""
+    public var showThumbCover: String? = ""
     
+    public static func ==(lhs: AHFMEpisode, rhs: AHFMEpisode) -> Bool {
+        return lhs.id == rhs.id && lhs.showId == rhs.showId
+    }
 }
 
 extension AHFMEpisode: AHDataModel {
@@ -44,15 +47,15 @@ extension AHFMEpisode: AHDataModel {
     
     public init(with dict: [String: Any?]){
         self.id = dict["id"] as! Int
-        self.showId = dict["id"] as! Int
-        self.buzzScore = dict["buzzScore"] as! Double
+        self.showId = dict["showId"] as! Int
+        self.buzzScore = dict["buzzScore"] as? Double
         self.duration = dict["duration"] as? Double
-        self.createdAt = dict["createdAt"] as! String
-        self.showTitle = dict["showTitle"] as! String
-        self.title = dict["title"] as! String
-        self.audioURL = dict["audioURL"] as! String
-        self.showFullCover = dict["showFullCover"] as! String
-        self.showThumbCover = dict["showThumbCover"] as! String
+        self.createdAt = dict["createdAt"] as? String
+        self.showTitle = dict["showTitle"] as? String
+        self.title = dict["title"] as? String
+        self.audioURL = dict["audioURL"] as? String
+        self.showFullCover = dict["showFullCover"] as? String
+        self.showThumbCover = dict["showThumbCover"] as? String
     }
     
     public static func tableName() -> String{

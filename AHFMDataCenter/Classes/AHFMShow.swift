@@ -10,7 +10,7 @@ import Foundation
 import AHDataModel
 
 
-public struct AHFMShow {
+public struct AHFMShow: Equatable {
     public var categories: [String]?
     
     public var categoryStr: String
@@ -31,6 +31,10 @@ public struct AHFMShow {
     // Indicates whether there's a new just downloaded episode
     public var hasNewDownload = false
 
+    
+    public static func ==(lhs: AHFMShow, rhs: AHFMShow) -> Bool {
+        return lhs.id == rhs.id
+    }
 }
 
 
@@ -53,13 +57,13 @@ extension AHFMShow: AHDataModel{
     
     public init(with dict: [String: Any?]){
         self.id = dict["id"] as! Int
-        self.numberOfEpDownloaded = dict["numberOfEpDownloaded"] as! Int
-        self.totalFilesSize = dict["totalFilesSize"] as! Int
+        self.numberOfEpDownloaded = dict["numberOfEpDownloaded"] as? Int ?? 0
+        self.totalFilesSize = dict["totalFilesSize"] as? Int ?? 0
         
-        let hasNewDownload = dict["hasNewDownload"] as! Int
+        let hasNewDownload = dict["hasNewDownload"] as? Int ?? 0
         self.hasNewDownload = Bool(hasNewDownload) ?? false
         
-        self.categoryStr = dict["categoryStr"] as! String
+        self.categoryStr = dict["categoryStr"] as? String ?? ""
         self.categories = categoryStr.components(separatedBy: ",")
         
         self.title = dict["title"] as! String

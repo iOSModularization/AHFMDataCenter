@@ -9,7 +9,7 @@
 import Foundation
 import AHDataModel
 
-public struct AHFMEpisodeInfo {
+public struct AHFMEpisodeInfo:Equatable {
     public var id:Int = 0
     
     //##### Belows are local managed properties
@@ -30,6 +30,10 @@ public struct AHFMEpisodeInfo {
     public var downloadedProgress: Double?
     
     public var isDownloaded: Bool?
+    
+    public static func ==(lhs: AHFMEpisodeInfo, rhs: AHFMEpisodeInfo) -> Bool {
+        return lhs.id == rhs.id
+    }
 }
 
 extension AHFMEpisodeInfo: AHDataModel {

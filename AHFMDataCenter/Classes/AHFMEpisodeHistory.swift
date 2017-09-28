@@ -10,9 +10,12 @@ import Foundation
 import AHDataModel
 
 // Each hisotry object represents a episode ID
-public struct AHFMEpisodeHistory {
+public struct AHFMEpisodeHistory: Equatable {
     public var id: Int = 0
     public var addedAt: Double = 0
+    public static func ==(lhs: AHFMEpisodeHistory, rhs: AHFMEpisodeHistory) -> Bool {
+        return lhs.id == rhs.id
+    }
 }
 
 extension AHFMEpisodeHistory: AHDataModel {
