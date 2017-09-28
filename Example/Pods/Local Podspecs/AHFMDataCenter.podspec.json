@@ -1,0 +1,30 @@
+{
+  "name": "AHFMDataCenter",
+  "version": "0.1.0",
+  "summary": "A short description of AHFMDataCenter.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ivsall2012/AHFMDataCenter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ivsall2012": "ivsall2012@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ivsall2012/AHFMDataCenter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AHFMDataCenter/Classes/**/*",
+  "dependencies": {
+    "AHDataModel": [
+
+    ],
+    "UIDeviceExtension": [
+
+    ]
+  }
+}

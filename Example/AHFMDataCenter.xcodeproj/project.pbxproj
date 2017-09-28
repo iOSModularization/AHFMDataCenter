@@ -42,11 +42,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6478D11049FF9D781440AB47 /* Pods-AHFMDataCenter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHFMDataCenter_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHFMDataCenter_Tests/Pods-AHFMDataCenter_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6C449BCD77177EB981836CAA /* AHFMDataCenter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AHFMDataCenter.podspec; path = ../AHFMDataCenter.podspec; sourceTree = "<group>"; };
-		7E2D21C26682F3F93DC3C0EE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6C449BCD77177EB981836CAA /* AHFMDataCenter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AHFMDataCenter.podspec; path = ../AHFMDataCenter.podspec; sourceTree = "<group>"; };
+		7E2D21C26682F3F93DC3C0EE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		94CA4155FC008812684B9A6F /* Pods_AHFMDataCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHFMDataCenter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF44DA229CAD21CE524D4B0D /* Pods-AHFMDataCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHFMDataCenter_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHFMDataCenter_Example/Pods-AHFMDataCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F845132F0CBE6ED5E94B0550 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F845132F0CBE6ED5E94B0550 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +215,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = MVFF28UQZP;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -304,11 +305,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AHFMDataCenter_Example/Pods-AHFMDataCenter_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AHDataModel/AHDataModel.framework",
 				"${BUILT_PRODUCTS_DIR}/AHFMDataCenter/AHFMDataCenter.framework",
+				"${BUILT_PRODUCTS_DIR}/UIDeviceExtension/UIDeviceExtension.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHDataModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHFMDataCenter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIDeviceExtension.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -505,6 +510,7 @@
 			baseConfigurationReference = 5710F027E4BCDC5B79889056 /* Pods-AHFMDataCenter_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MVFF28UQZP;
 				INFOPLIST_FILE = AHFMDataCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -519,6 +525,7 @@
 			baseConfigurationReference = EF44DA229CAD21CE524D4B0D /* Pods-AHFMDataCenter_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MVFF28UQZP;
 				INFOPLIST_FILE = AHFMDataCenter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
