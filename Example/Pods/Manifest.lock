@@ -1,6 +1,6 @@
 PODS:
-  - AHDataModel (0.2.0)
-  - AHFMDataCenter (0.1.0):
+  - AHDataModel (0.5.1)
+  - AHFMDataCenter (0.1.6):
     - AHDataModel
     - UIDeviceExtension
   - UIDeviceExtension (0.1.0)
@@ -13,8 +13,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AHDataModel: 9c3e23889cc3c82b20b1d52414e23ad41e8a871d
-  AHFMDataCenter: 8775bca9df8bec450624b2174779c314ed857dd0
+  AHDataModel: 3673387fef1450553d1a36db05e79eddff199396
+  AHFMDataCenter: 6e44fe3761b941aa178deb49e495348324093d19
   UIDeviceExtension: 53d1d2177714a3e434e755b6c0fb66678595fce4
 
 PODFILE CHECKSUM: 3dfd5e4959a0119ce9253d372eb1162a871f0985

@@ -6,7 +6,8 @@
 //  Copyright © 2017 Andy Tong. All rights reserved.
 //
 
-import CSQLite
+//import CSQLite
+import SQLite3
 
 public enum AHDBDataType: String, CustomStringConvertible {
     case integer = "Integer"
@@ -112,10 +113,9 @@ internal struct AHDBAttribute: CustomStringConvertible, Equatable {
 
 
 class AHDatabase {
+    fileprivate(set) var dbPath: String?
     fileprivate static var dbArray = [String : AHDatabase]()
     
-    var dbPath: String?
-    fileprivate var dbPointer: OpaquePointer?
     var latestError: String {
         if let message = String(cString: sqlite3_errmsg(dbPointer), encoding: .utf8) {
             return message
@@ -124,6 +124,8 @@ class AHDatabase {
         }
         
     }
+    
+    fileprivate var dbPointer: OpaquePointer?
     fileprivate init(dbPointer: OpaquePointer) {
         self.dbPointer = dbPointer
     }
@@ -140,7 +142,7 @@ class AHDatabase {
 //MARK:- APIs
 extension AHDatabase {
     
-    /// the path parameter is full file path
+    /// One db file for one db connection!!
     static func connection(path: String) throws -> AHDatabase {
         if let db = dbArray[path] {
             return db

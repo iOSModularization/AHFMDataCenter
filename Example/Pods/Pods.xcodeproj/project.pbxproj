@@ -7,38 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0027626313ABBDB3198BA184B76B57AE /* AHDataModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A859FC6AAD15113D6381AB1C6447B9BD /* AHDataModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		089376426529595C084BD18FF691EF9C /* AHDataModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E63D72A29DE299D588DEB4872BCBAD13 /* AHDataModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A53D7B5A76FBFC0FBAB456FD871AD1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0E394F779724B4E1B63AEB1B419A97 /* Foundation.framework */; };
 		0DE24BBA949385A1908C8866640A3E0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0E394F779724B4E1B63AEB1B419A97 /* Foundation.framework */; };
-		21C6C69021E324A819DEDB4BDBC8C41A /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 143DB5DCC50D0FC11E36003C2256ACBA /* module.modulemap */; };
-		2F9A0013CA2432AF4536E95723B8B019 /* UIDeviceExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 996B64657893778BCF7FF27FFD2F9849 /* UIDeviceExtension-dummy.m */; };
-		335045A54E444279AABA4E8F29B700C9 /* AHFMEpisodeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7F9E7003489785111A700ABF91FD8 /* AHFMEpisodeInfo.swift */; };
-		369FD22375EE13FAA34C969A2FB9A40B /* AHFMShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF8511DA077E32AF2B65BEC18456E6D /* AHFMShow.swift */; };
-		4E1E03B343D650FAB21960C966BF6508 /* AHDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AACC18ABF9AB99F7FEC62894D6C227 /* AHDatabase.swift */; };
-		5699C7479E9FA4AE10B12430D68E53A2 /* AHDataModelQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C168D39E42731143EB0851188944CC /* AHDataModelQuery.swift */; };
-		678EF48F5AAA0E4954E7D021A930D3C0 /* AHDataModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9EBFA92D3067B1819B49C8AB968C25 /* AHDataModel-dummy.m */; };
+		19934CD4E7289FF0E84B58B979026295 /* AHFMEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC29C4B284946A6389E573CBA1A9AAC5 /* AHFMEpisode.swift */; };
+		232C9337BC0B2FCF9B8232C05FACCBC2 /* AHFMSubscribedShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1C6ADEECB8BD562EDB2F7A5FC3D91C /* AHFMSubscribedShow.swift */; };
+		2654EBF76703DBE9E9FB414962BA45FE /* AHDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D81D5AE8C1290D34073E7D716D8DE7 /* AHDatabase.swift */; };
+		286C75F169795FFE7DD9591E818BD2E1 /* AHFMDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C178C2C5114B081F1EEFC8ABA326276 /* AHFMDataCenter.swift */; };
+		2F9A0013CA2432AF4536E95723B8B019 /* UIDeviceExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10EDA25A1CDD9D6A8202BDD6EF9CDC /* UIDeviceExtension-dummy.m */; };
+		2F9F1C45FB922FE86B381AEF6038CF3F /* AHDataModelQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D3BAF672BA3030031C28A1DE9FB247 /* AHDataModelQuery.swift */; };
+		45AEA155190F769C06C60040C472A89E /* AHDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBBCE0825A13E63DFBC284F4C1DC9C5 /* AHDataModel.swift */; };
+		53C9FC0D2BE6D0465D1640608A6BF843 /* AHFMShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6C38A01548FC292E1A0D8D358E0608 /* AHFMShow.swift */; };
 		6D4282B0D88BB157216B480C7867EC15 /* Pods-AHFMDataCenter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FDACADD5314D866BDDDE4A0F62DA3F /* Pods-AHFMDataCenter_Tests-dummy.m */; };
+		7303EF08C783E3CE1072FB4CDA9CEA02 /* AHFMDataCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F62705CC098A65D891223E68D1FA6 /* AHFMDataCenter-dummy.m */; };
 		7476818E4CBE153EA05B00FA5B1EC211 /* AHFMDataCenter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F6221631210A3F9B172879904C30E1D /* AHFMDataCenter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81BE8B3A326F16748BE94822EF453895 /* AHFMSubscribedShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D69B1D278EE548207C61739049A3D3 /* AHFMSubscribedShow.swift */; };
+		7EA5B0EEFD6796490C410CD36F096D64 /* AHFMEpisodeHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069128497FA93EF44B6E21FB02B807CE /* AHFMEpisodeHistory.swift */; };
+		7F63C3E5C662EB3E276F64CC159E2D76 /* AHFMEpisodeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA62236C73AB1EB3877ACD158EC8112E /* AHFMEpisodeInfo.swift */; };
 		846A0FD5D873A3C0FE010719D4B1B928 /* Pods-AHFMDataCenter_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E51387AF5CBAA7BC436B5C3A41BD35B /* Pods-AHFMDataCenter_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86E2E799F68141B470834A75B88C4068 /* AHFMDataCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A48F62705CC098A65D891223E68D1FA6 /* AHFMDataCenter-dummy.m */; };
-		8BDFF1C3E85B7866FFE3D2A0230C9B0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0E394F779724B4E1B63AEB1B419A97 /* Foundation.framework */; };
-		9ACDA37192B7F041484AA00B7D05AC0D /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE176263E1F5DEC4CF3BAAE4D91BBC78 /* Migrator.swift */; };
-		A4A076DC2CF2CDCE15E45711EFA45A2A /* AHFMDataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E47C1F52F06A5F20179C399C68A4 /* AHFMDataCenter.swift */; };
-		A5068F3D2B2FFAA5F22177BC7026F21B /* UIDeviceExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BB495913643FD0B170DE35EA9206503 /* UIDeviceExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AACC3982FEE4F254E7646BD26B6EAC1E /* AHDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD239D68269EB0B6FDA6A9B9DA9E06 /* AHDataModel.swift */; };
+		8E357A8575E7F57FAD16D1A2E6C07DC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0E394F779724B4E1B63AEB1B419A97 /* Foundation.framework */; };
+		9948B99E63C147C89AF568E060D5E1AB /* AHDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C0781D4794023207E782BD9166798 /* AHDB.swift */; };
+		A5068F3D2B2FFAA5F22177BC7026F21B /* UIDeviceExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 088B2F671B9BE3045BA8C7C7FF8F99AA /* UIDeviceExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB2E638C38C54111C700A6E06E3F10AC /* AHDataModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6D82E5664021DDAC0E2BF19A7F95DD /* AHDataModel.framework */; };
+		AD618C25DBCBD01E4844DDAFEC37747D /* AHDBColumnInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB81884277C60460B18607C05D81BAA /* AHDBColumnInfo.swift */; };
 		B5F0007CEDF8921CF49F6AE64197C442 /* UIDeviceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4EE3B8158B7307B86742DB8A3F1BB2 /* UIDeviceExtension.framework */; };
+		C1EBF8CE1C69DE2C1C450325344F2878 /* Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38637028EAFED99F058B0034EE233CC3 /* Migration.swift */; };
 		C23039DF84FF52051380412F1B9AE76C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0E394F779724B4E1B63AEB1B419A97 /* Foundation.framework */; };
-		C3B08175401E6A590EBF187EC9C0135B /* AHFMEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4E505798490610AA489754063795A7 /* AHFMEpisode.swift */; };
-		CDC690AB6CB8755346C02BC8226D0E33 /* AHDBColumnInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A499C0A1A74DE3A131B99AA33CC51 /* AHDBColumnInfo.swift */; };
-		D262508E418851E973AF9BEAC851B13A /* module.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = 6049257D12F4C495E7E9746526A00597 /* module.modulemap */; };
-		D6679DE2FED7C1077B2700F3B6CACBBD /* AHFMEpisodeHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C42CE0B048BC466C794FF698B98A8 /* AHFMEpisodeHistory.swift */; };
+		D1BC0C9BF05B65CAF222AC33FB3D65E3 /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8852CB048B7FAA1D2436004A0E3143B /* Migrator.swift */; };
 		E3326162D518BAF2C5A2935A7F3A4CA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0E394F779724B4E1B63AEB1B419A97 /* Foundation.framework */; };
-		E3A59E60DABAB10E2F6EC8452AADECAE /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FF4EAB58CA91366C3AC533733BD882 /* UIDevice+Extension.swift */; };
+		E3A59E60DABAB10E2F6EC8452AADECAE /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2E81120ED394167D485B1E90B96685 /* UIDevice+Extension.swift */; };
 		E3D1AE9F78DD7BFC5806677C5AAA9EEB /* Pods-AHFMDataCenter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C0B2A3EB7E5C009B0B89418D5BC38C /* Pods-AHFMDataCenter_Example-dummy.m */; };
 		E8F0075B46D781A755360B5C487C8D77 /* Pods-AHFMDataCenter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C67968A374371DA8FDD0124AA5C6FC /* Pods-AHFMDataCenter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9E26DD9F794ABC7672B036C9647E7C0 /* Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363ABB0E1D5B513B88627DF6D2A923BB /* Migration.swift */; };
+		FB7F6146FB91963D61AFA6DABAAF3150 /* AHDataModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C42E24D8F9B4C16C328531352DBEB /* AHDataModel-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +45,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BB57FE047316C9C24FF6ECAFCDF21E50;
+			remoteGlobalIDString = ED502015755919A139C59C7E499296E5;
 			remoteInfo = AHDataModel;
 		};
 		81D3DD95C1FC6684E11FA9D16C4A60A1 /* PBXContainerItemProxy */ = {
@@ -60,7 +59,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BB57FE047316C9C24FF6ECAFCDF21E50;
+			remoteGlobalIDString = ED502015755919A139C59C7E499296E5;
 			remoteInfo = AHDataModel;
 		};
 		E2AC30B0D1238BD02D6930A332F76CC3 /* PBXContainerItemProxy */ = {
@@ -80,71 +79,78 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		143DB5DCC50D0FC11E36003C2256ACBA /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ModuleMaps/iphoneos/module.modulemap; sourceTree = "<group>"; };
-		1A9EBFA92D3067B1819B49C8AB968C25 /* AHDataModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHDataModel-dummy.m"; sourceTree = "<group>"; };
-		1C5C42CE0B048BC466C794FF698B98A8 /* AHFMEpisodeHistory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMEpisodeHistory.swift; sourceTree = "<group>"; };
-		234B4C1651A2F690EBB749225A5E0796 /* Pods_AHFMDataCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHFMDataCenter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		26E5AEF18638571649B7F41F75E5C25D /* UIDeviceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UIDeviceExtension.modulemap; sourceTree = "<group>"; };
+		01D3BAF672BA3030031C28A1DE9FB247 /* AHDataModelQuery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDataModelQuery.swift; path = AHDataModel/Classes/AHDataModelQuery.swift; sourceTree = "<group>"; };
+		069128497FA93EF44B6E21FB02B807CE /* AHFMEpisodeHistory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMEpisodeHistory.swift; sourceTree = "<group>"; };
+		088B2F671B9BE3045BA8C7C7FF8F99AA /* UIDeviceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDeviceExtension-umbrella.h"; sourceTree = "<group>"; };
+		0E6C38A01548FC292E1A0D8D358E0608 /* AHFMShow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMShow.swift; sourceTree = "<group>"; };
+		1C178C2C5114B081F1EEFC8ABA326276 /* AHFMDataCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMDataCenter.swift; sourceTree = "<group>"; };
+		234B4C1651A2F690EBB749225A5E0796 /* Pods_AHFMDataCenter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AHFMDataCenter_Tests.framework; path = "Pods-AHFMDataCenter_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C0B2A3EB7E5C009B0B89418D5BC38C /* Pods-AHFMDataCenter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AHFMDataCenter_Example-dummy.m"; sourceTree = "<group>"; };
-		28033DCED7174D36E28722FD1B164848 /* Pods-AHFMDataCenter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AHFMDataCenter_Example.modulemap"; sourceTree = "<group>"; };
+		28033DCED7174D36E28722FD1B164848 /* Pods-AHFMDataCenter_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AHFMDataCenter_Example.modulemap"; sourceTree = "<group>"; };
+		296C0781D4794023207E782BD9166798 /* AHDB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDB.swift; path = AHDataModel/Classes/AHDB.swift; sourceTree = "<group>"; };
 		2ACDEA7B877BBAA488586750A30644D5 /* Pods-AHFMDataCenter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMDataCenter_Tests-resources.sh"; sourceTree = "<group>"; };
 		30C67968A374371DA8FDD0124AA5C6FC /* Pods-AHFMDataCenter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AHFMDataCenter_Tests-umbrella.h"; sourceTree = "<group>"; };
 		32DEB87CC297899507DB77F8989039E1 /* AHFMDataCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMDataCenter-prefix.pch"; sourceTree = "<group>"; };
-		363ABB0E1D5B513B88627DF6D2A923BB /* Migration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migration.swift; path = AHDataModel/Classes/Migration.swift; sourceTree = "<group>"; };
-		37D1E47C1F52F06A5F20179C399C68A4 /* AHFMDataCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMDataCenter.swift; sourceTree = "<group>"; };
-		3B57C18FE3215AC1C8A495D96BBD7146 /* UIDeviceExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIDeviceExtension.xcconfig; sourceTree = "<group>"; };
+		38637028EAFED99F058B0034EE233CC3 /* Migration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migration.swift; path = AHDataModel/Classes/Migration.swift; sourceTree = "<group>"; };
+		389FFFBA7DA8DA26D0ED4E63BFB5DA52 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B1C6ADEECB8BD562EDB2F7A5FC3D91C /* AHFMSubscribedShow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMSubscribedShow.swift; sourceTree = "<group>"; };
+		3E6C42E24D8F9B4C16C328531352DBEB /* AHDataModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHDataModel-dummy.m"; sourceTree = "<group>"; };
 		40AA29066439DB2DABF36026B2F40795 /* Pods-AHFMDataCenter_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMDataCenter_Example-resources.sh"; sourceTree = "<group>"; };
 		447362A6088E1AE8D6BFB9BD5AC3CE8B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45CA6E9CF11C61666D2C14AA15FEB9D3 /* AHFMDataCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHFMDataCenter.xcconfig; sourceTree = "<group>"; };
-		47D04C07A878F67BBE2043179B8D3DF7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48BD239D68269EB0B6FDA6A9B9DA9E06 /* AHDataModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDataModel.swift; path = AHDataModel/Classes/AHDataModel.swift; sourceTree = "<group>"; };
 		49F94CA942ACD2355DFDCF0E6FEDD83C /* Pods-AHFMDataCenter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AHFMDataCenter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4D8E813680EB4C315FDA53979C25241E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59FAC5133D37CA343185105A4F1F2853 /* Pods-AHFMDataCenter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AHFMDataCenter_Tests.modulemap"; sourceTree = "<group>"; };
+		4EC2FAF06D6602DB9CE5F06740FB7394 /* AHDataModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHDataModel-prefix.pch"; sourceTree = "<group>"; };
+		59FAC5133D37CA343185105A4F1F2853 /* Pods-AHFMDataCenter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AHFMDataCenter_Tests.modulemap"; sourceTree = "<group>"; };
 		5C4EE3B8158B7307B86742DB8A3F1BB2 /* UIDeviceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIDeviceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF8F5BB7A0175EE42AA797413C21C75 /* Pods-AHFMDataCenter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMDataCenter_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6049257D12F4C495E7E9746526A00597 /* module.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = ModuleMaps/iphonesimulator/module.modulemap; sourceTree = "<group>"; };
-		60560F2EB05707CB3A15E4B01366A32A /* AHDataModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHDataModel-prefix.pch"; sourceTree = "<group>"; };
-		626EE6C3CB7F2DADDA0FB53473A7D18D /* UIDeviceExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDeviceExtension-prefix.pch"; sourceTree = "<group>"; };
-		64ECD9B128A9E8C9EFA21E05CB073B40 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FBBCE0825A13E63DFBC284F4C1DC9C5 /* AHDataModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDataModel.swift; path = AHDataModel/Classes/AHDataModel.swift; sourceTree = "<group>"; };
 		652452AF1836D396A2C3AFDB21AABB36 /* Pods-AHFMDataCenter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AHFMDataCenter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		682CAB0029ECE57D21B8AE53AC8665F9 /* AHFMDataCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHFMDataCenter.modulemap; sourceTree = "<group>"; };
-		71C168D39E42731143EB0851188944CC /* AHDataModelQuery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDataModelQuery.swift; path = AHDataModel/Classes/AHDataModelQuery.swift; sourceTree = "<group>"; };
-		7C4E505798490610AA489754063795A7 /* AHFMEpisode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMEpisode.swift; sourceTree = "<group>"; };
+		66A64946BE2D575BAB9BE950DD4491C0 /* UIDeviceExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDeviceExtension-prefix.pch"; sourceTree = "<group>"; };
+		682CAB0029ECE57D21B8AE53AC8665F9 /* AHFMDataCenter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHFMDataCenter.modulemap; sourceTree = "<group>"; };
+		7D10E5410762E49974227122EEA351C9 /* AHDataModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AHDataModel.modulemap; sourceTree = "<group>"; };
 		810A6E04BFDDBC13A7E432575C4AC4D3 /* Pods-AHFMDataCenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMDataCenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		882307D58F694F4ABDDB9F09B382394C /* Pods-AHFMDataCenter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMDataCenter_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8BB495913643FD0B170DE35EA9206503 /* UIDeviceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDeviceExtension-umbrella.h"; sourceTree = "<group>"; };
-		8FA7F9E7003489785111A700ABF91FD8 /* AHFMEpisodeInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMEpisodeInfo.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9703E07F8A14796B86F2DB48ECF8D114 /* AHFMDataCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFMDataCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		996B64657893778BCF7FF27FFD2F9849 /* UIDeviceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDeviceExtension-dummy.m"; sourceTree = "<group>"; };
-		9AF8511DA077E32AF2B65BEC18456E6D /* AHFMShow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMShow.swift; sourceTree = "<group>"; };
+		8877C6894F853340EF00277EF842B705 /* AHDataModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHDataModel.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9703E07F8A14796B86F2DB48ECF8D114 /* AHFMDataCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHFMDataCenter.framework; path = AHFMDataCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C63B69AD9FF7BD1DCBCA2C4874E4CB3 /* UIDeviceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UIDeviceExtension.modulemap; sourceTree = "<group>"; };
 		9E51387AF5CBAA7BC436B5C3A41BD35B /* Pods-AHFMDataCenter_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AHFMDataCenter_Example-umbrella.h"; sourceTree = "<group>"; };
 		9F61A609AC1DC87F22FBDCE80DE70316 /* Pods-AHFMDataCenter_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMDataCenter_Example-frameworks.sh"; sourceTree = "<group>"; };
 		9F6221631210A3F9B172879904C30E1D /* AHFMDataCenter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHFMDataCenter-umbrella.h"; sourceTree = "<group>"; };
-		A45A499C0A1A74DE3A131B99AA33CC51 /* AHDBColumnInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDBColumnInfo.swift; path = AHDataModel/Classes/AHDBColumnInfo.swift; sourceTree = "<group>"; };
 		A48F62705CC098A65D891223E68D1FA6 /* AHFMDataCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHFMDataCenter-dummy.m"; sourceTree = "<group>"; };
-		A6146B6BE699231C0F3CEBCB11EE7D0F /* AHDataModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHDataModel.xcconfig; sourceTree = "<group>"; };
-		A859FC6AAD15113D6381AB1C6447B9BD /* AHDataModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHDataModel-umbrella.h"; sourceTree = "<group>"; };
+		A7D81D5AE8C1290D34073E7D716D8DE7 /* AHDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDatabase.swift; path = AHDataModel/Classes/AHDatabase.swift; sourceTree = "<group>"; };
+		AA62236C73AB1EB3877ACD158EC8112E /* AHFMEpisodeInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMEpisodeInfo.swift; sourceTree = "<group>"; };
 		AD6D82E5664021DDAC0E2BF19A7F95DD /* AHDataModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHDataModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B14AE2967F548281170E3F000B94A40B /* AHDataModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AHDataModel.modulemap; sourceTree = "<group>"; };
-		B5A708315A74B81B1540FD3BF99B5D09 /* UIDeviceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIDeviceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B02A5AAD32592333B7CDDB5EE075B2FC /* UIDeviceExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIDeviceExtension.xcconfig; sourceTree = "<group>"; };
+		B5A708315A74B81B1540FD3BF99B5D09 /* UIDeviceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIDeviceExtension.framework; path = UIDeviceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64AC9C67694071390A3A99BBB2FBBC1 /* Pods-AHFMDataCenter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AHFMDataCenter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BF2E81120ED394167D485B1E90B96685 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "UIDeviceExtension/Classes/UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		C0FDACADD5314D866BDDDE4A0F62DA3F /* Pods-AHFMDataCenter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AHFMDataCenter_Tests-dummy.m"; sourceTree = "<group>"; };
-		C2D69B1D278EE548207C61739049A3D3 /* AHFMSubscribedShow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMSubscribedShow.swift; sourceTree = "<group>"; };
 		C5E41AADFA996392F2784221B56B7949 /* Pods-AHFMDataCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AHFMDataCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C6AACC18ABF9AB99F7FEC62894D6C227 /* AHDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDatabase.swift; path = AHDataModel/Classes/AHDatabase.swift; sourceTree = "<group>"; };
+		CC29C4B284946A6389E573CBA1A9AAC5 /* AHFMEpisode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AHFMEpisode.swift; sourceTree = "<group>"; };
 		D3747DB4E8D965A1C4AFAF896C1F11DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D40BEE5350FBD4A2974A1F6414D7322F /* AHDataModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHDataModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4FF4EAB58CA91366C3AC533733BD882 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "UIDeviceExtension/Classes/UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		D40BEE5350FBD4A2974A1F6414D7322F /* AHDataModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHDataModel.framework; path = AHDataModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE10EDA25A1CDD9D6A8202BDD6EF9CDC /* UIDeviceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDeviceExtension-dummy.m"; sourceTree = "<group>"; };
+		DE33D78A50A43999440900F577DF4E70 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E63D72A29DE299D588DEB4872BCBAD13 /* AHDataModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHDataModel-umbrella.h"; sourceTree = "<group>"; };
+		E8852CB048B7FAA1D2436004A0E3143B /* Migrator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migrator.swift; path = AHDataModel/Classes/Migrator.swift; sourceTree = "<group>"; };
 		ED45DFBEFD087DB84EAB2A9722B5C2E7 /* Pods-AHFMDataCenter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AHFMDataCenter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		EE176263E1F5DEC4CF3BAAE4D91BBC78 /* Migrator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Migrator.swift; path = AHDataModel/Classes/Migrator.swift; sourceTree = "<group>"; };
-		F5F5D99B8B7EFA8DF09F7C081A44E9B9 /* Pods_AHFMDataCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHFMDataCenter_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5F5D99B8B7EFA8DF09F7C081A44E9B9 /* Pods_AHFMDataCenter_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AHFMDataCenter_Example.framework; path = "Pods-AHFMDataCenter_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0E394F779724B4E1B63AEB1B419A97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		FBFCF361B7BE980D740074CF954B47D7 /* Pods-AHFMDataCenter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AHFMDataCenter_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		FEB81884277C60460B18607C05D81BAA /* AHDBColumnInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHDBColumnInfo.swift; path = AHDataModel/Classes/AHDBColumnInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B6767283118BDF58C5384DEA17BBDF83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E357A8575E7F57FAD16D1A2E6C07DC7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA0D578603CFEEE45247499336B3C158 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,17 +185,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE79FEAB6A041FEA576D788C963AD535 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8BDFF1C3E85B7866FFE3D2A0230C9B0F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FA0455515AFF4D2628FB5E991F44D65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE3939CD225C7CCD697A52700F5052D1 /* AHDataModel */,
+				30D618C56B8E33C490D3283B207E0300 /* UIDeviceExtension */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		27F11A8D06B84B6CADBCCFACE918E303 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				389FFFBA7DA8DA26D0ED4E63BFB5DA52 /* Info.plist */,
+				9C63B69AD9FF7BD1DCBCA2C4874E4CB3 /* UIDeviceExtension.modulemap */,
+				B02A5AAD32592333B7CDDB5EE075B2FC /* UIDeviceExtension.xcconfig */,
+				DE10EDA25A1CDD9D6A8202BDD6EF9CDC /* UIDeviceExtension-dummy.m */,
+				66A64946BE2D575BAB9BE950DD4491C0 /* UIDeviceExtension-prefix.pch */,
+				088B2F671B9BE3045BA8C7C7FF8F99AA /* UIDeviceExtension-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIDeviceExtension";
+			sourceTree = "<group>";
+		};
 		286BBF4EDEB74E7F889D453CE8BA9067 /* Pods-AHFMDataCenter_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,12 +229,37 @@
 			path = "Target Support Files/Pods-AHFMDataCenter_Tests";
 			sourceTree = "<group>";
 		};
+		28D4D213144F442C2E00B30B2A52C825 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D10E5410762E49974227122EEA351C9 /* AHDataModel.modulemap */,
+				8877C6894F853340EF00277EF842B705 /* AHDataModel.xcconfig */,
+				3E6C42E24D8F9B4C16C328531352DBEB /* AHDataModel-dummy.m */,
+				4EC2FAF06D6602DB9CE5F06740FB7394 /* AHDataModel-prefix.pch */,
+				E63D72A29DE299D588DEB4872BCBAD13 /* AHDataModel-umbrella.h */,
+				DE33D78A50A43999440900F577DF4E70 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHDataModel";
+			sourceTree = "<group>";
+		};
 		2C2B49491B9C664FA5B1AEE8B871225A /* AHFMDataCenter */ = {
 			isa = PBXGroup;
 			children = (
-				5B68F7EA4EE30348DB6CD9A0BB37D2AD /* Classes */,
+				BCC4B905FB4E432E7190A3F1051C3AB0 /* Classes */,
 			);
+			name = AHFMDataCenter;
 			path = AHFMDataCenter;
+			sourceTree = "<group>";
+		};
+		30D618C56B8E33C490D3283B207E0300 /* UIDeviceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				BF2E81120ED394167D485B1E90B96685 /* UIDevice+Extension.swift */,
+				27F11A8D06B84B6CADBCCFACE918E303 /* Support Files */,
+			);
+			name = UIDeviceExtension;
+			path = UIDeviceExtension;
 			sourceTree = "<group>";
 		};
 		43A7D1477A6A12160DA8B7BCBCCB8E1F /* Support Files */ = {
@@ -230,57 +276,12 @@
 			path = "Example/Pods/Target Support Files/AHFMDataCenter";
 			sourceTree = "<group>";
 		};
-		4A83D5A7F1E23A8DC95022627FB942AB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				88AAEFCAB63FEA8E2CE7D203A6A9CCE1 /* AHDataModel */,
-				70DF7FF397EB80A8290748E9C484684A /* UIDeviceExtension */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		5B68F7EA4EE30348DB6CD9A0BB37D2AD /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				37D1E47C1F52F06A5F20179C399C68A4 /* AHFMDataCenter.swift */,
-				7C4E505798490610AA489754063795A7 /* AHFMEpisode.swift */,
-				1C5C42CE0B048BC466C794FF698B98A8 /* AHFMEpisodeHistory.swift */,
-				8FA7F9E7003489785111A700ABF91FD8 /* AHFMEpisodeInfo.swift */,
-				9AF8511DA077E32AF2B65BEC18456E6D /* AHFMShow.swift */,
-				C2D69B1D278EE548207C61739049A3D3 /* AHFMSubscribedShow.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		62EE67AAF5622A5B4E5812BC5AD18797 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				FB0E394F779724B4E1B63AEB1B419A97 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		667470F2770F5833EC640552F6297C88 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				47D04C07A878F67BBE2043179B8D3DF7 /* Info.plist */,
-				26E5AEF18638571649B7F41F75E5C25D /* UIDeviceExtension.modulemap */,
-				3B57C18FE3215AC1C8A495D96BBD7146 /* UIDeviceExtension.xcconfig */,
-				996B64657893778BCF7FF27FFD2F9849 /* UIDeviceExtension-dummy.m */,
-				626EE6C3CB7F2DADDA0FB53473A7D18D /* UIDeviceExtension-prefix.pch */,
-				8BB495913643FD0B170DE35EA9206503 /* UIDeviceExtension-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UIDeviceExtension";
-			sourceTree = "<group>";
-		};
-		70DF7FF397EB80A8290748E9C484684A /* UIDeviceExtension */ = {
-			isa = PBXGroup;
-			children = (
-				D4FF4EAB58CA91366C3AC533733BD882 /* UIDevice+Extension.swift */,
-				667470F2770F5833EC640552F6297C88 /* Support Files */,
-			);
-			path = UIDeviceExtension;
 			sourceTree = "<group>";
 		};
 		7AFF1193D6C29FF9E02B3EA34D3A0CE8 /* AHFMDataCenter */ = {
@@ -299,7 +300,7 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				B6A5F1D9F108B74AF71D44AD762115D7 /* Development Pods */,
 				D1683E8301B2BE1B6984464581366A14 /* Frameworks */,
-				4A83D5A7F1E23A8DC95022627FB942AB /* Pods */,
+				1FA0455515AFF4D2628FB5E991F44D65 /* Pods */,
 				7E5D0CC23EDC812DE5F4071A18AD68AE /* Products */,
 				84E7DA7204230A068C610B1629191820 /* Targets Support Files */,
 			);
@@ -326,19 +327,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		88AAEFCAB63FEA8E2CE7D203A6A9CCE1 /* AHDataModel */ = {
+		AE3939CD225C7CCD697A52700F5052D1 /* AHDataModel */ = {
 			isa = PBXGroup;
 			children = (
-				C6AACC18ABF9AB99F7FEC62894D6C227 /* AHDatabase.swift */,
-				48BD239D68269EB0B6FDA6A9B9DA9E06 /* AHDataModel.swift */,
-				71C168D39E42731143EB0851188944CC /* AHDataModelQuery.swift */,
-				A45A499C0A1A74DE3A131B99AA33CC51 /* AHDBColumnInfo.swift */,
-				363ABB0E1D5B513B88627DF6D2A923BB /* Migration.swift */,
-				EE176263E1F5DEC4CF3BAAE4D91BBC78 /* Migrator.swift */,
-				143DB5DCC50D0FC11E36003C2256ACBA /* module.modulemap */,
-				6049257D12F4C495E7E9746526A00597 /* module.modulemap */,
-				C520EC45CD885F5A888E8FF4BC618328 /* Support Files */,
+				A7D81D5AE8C1290D34073E7D716D8DE7 /* AHDatabase.swift */,
+				5FBBCE0825A13E63DFBC284F4C1DC9C5 /* AHDataModel.swift */,
+				01D3BAF672BA3030031C28A1DE9FB247 /* AHDataModelQuery.swift */,
+				296C0781D4794023207E782BD9166798 /* AHDB.swift */,
+				FEB81884277C60460B18607C05D81BAA /* AHDBColumnInfo.swift */,
+				38637028EAFED99F058B0034EE233CC3 /* Migration.swift */,
+				E8852CB048B7FAA1D2436004A0E3143B /* Migrator.swift */,
+				28D4D213144F442C2E00B30B2A52C825 /* Support Files */,
 			);
+			name = AHDataModel;
 			path = AHDataModel;
 			sourceTree = "<group>";
 		};
@@ -368,18 +369,18 @@
 			path = "Target Support Files/Pods-AHFMDataCenter_Example";
 			sourceTree = "<group>";
 		};
-		C520EC45CD885F5A888E8FF4BC618328 /* Support Files */ = {
+		BCC4B905FB4E432E7190A3F1051C3AB0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B14AE2967F548281170E3F000B94A40B /* AHDataModel.modulemap */,
-				A6146B6BE699231C0F3CEBCB11EE7D0F /* AHDataModel.xcconfig */,
-				1A9EBFA92D3067B1819B49C8AB968C25 /* AHDataModel-dummy.m */,
-				60560F2EB05707CB3A15E4B01366A32A /* AHDataModel-prefix.pch */,
-				A859FC6AAD15113D6381AB1C6447B9BD /* AHDataModel-umbrella.h */,
-				64ECD9B128A9E8C9EFA21E05CB073B40 /* Info.plist */,
+				1C178C2C5114B081F1EEFC8ABA326276 /* AHFMDataCenter.swift */,
+				CC29C4B284946A6389E573CBA1A9AAC5 /* AHFMEpisode.swift */,
+				069128497FA93EF44B6E21FB02B807CE /* AHFMEpisodeHistory.swift */,
+				AA62236C73AB1EB3877ACD158EC8112E /* AHFMEpisodeInfo.swift */,
+				0E6C38A01548FC292E1A0D8D358E0608 /* AHFMShow.swift */,
+				3B1C6ADEECB8BD562EDB2F7A5FC3D91C /* AHFMSubscribedShow.swift */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/AHDataModel";
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		D1683E8301B2BE1B6984464581366A14 /* Frameworks */ = {
@@ -411,19 +412,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0E16AE747714ED2C46EB38F51DBA1A6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0027626313ABBDB3198BA184B76B57AE /* AHDataModel-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A9C0DF08DFEBC52BE4198500225848E9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				846A0FD5D873A3C0FE010719D4B1B928 /* Pods-AHFMDataCenter_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6CE54786959BB6D656D7E2402266483 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089376426529595C084BD18FF691EF9C /* AHDataModel-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +443,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4C3ED7491FAE2CC74A4FE576D0B3C89 /* Build configuration list for PBXNativeTarget "AHFMDataCenter" */;
 			buildPhases = (
-				5EB28244A4AB31451C504B45DCAD3C68 /* Sources */,
+				6D2733F507272302F8E57DD774FC9E23 /* Sources */,
 				CC94C857FCF6CF66F779649354883F92 /* Frameworks */,
 				5A58E0B300DADCA521AC06F8193D0CFA /* Headers */,
 			);
@@ -511,13 +512,13 @@
 			productReference = 234B4C1651A2F690EBB749225A5E0796 /* Pods_AHFMDataCenter_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BB57FE047316C9C24FF6ECAFCDF21E50 /* AHDataModel */ = {
+		ED502015755919A139C59C7E499296E5 /* AHDataModel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 922D614F225F834AC3872BBFCA7EA506 /* Build configuration list for PBXNativeTarget "AHDataModel" */;
+			buildConfigurationList = 288948AAA223D3567A10D5AFDD0BB8D3 /* Build configuration list for PBXNativeTarget "AHDataModel" */;
 			buildPhases = (
-				8A69DACCC0FAD1C67758699339D170BF /* Sources */,
-				FE79FEAB6A041FEA576D788C963AD535 /* Frameworks */,
-				A0E16AE747714ED2C46EB38F51DBA1A6 /* Headers */,
+				38D89221024DC0611A00B60EE9143807 /* Sources */,
+				B6767283118BDF58C5384DEA17BBDF83 /* Frameworks */,
+				B6CE54786959BB6D656D7E2402266483 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -549,7 +550,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB57FE047316C9C24FF6ECAFCDF21E50 /* AHDataModel */,
+				ED502015755919A139C59C7E499296E5 /* AHDataModel */,
 				092D0A40D6045DE75C3E46BC3B97370D /* AHFMDataCenter */,
 				695B2CC0D08071C9C8E70BDF7908077D /* Pods-AHFMDataCenter_Example */,
 				B1C111544C6639446F08E2AC9A779C53 /* Pods-AHFMDataCenter_Tests */,
@@ -576,33 +577,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EB28244A4AB31451C504B45DCAD3C68 /* Sources */ = {
+		38D89221024DC0611A00B60EE9143807 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4A076DC2CF2CDCE15E45711EFA45A2A /* AHFMDataCenter.swift in Sources */,
-				86E2E799F68141B470834A75B88C4068 /* AHFMDataCenter-dummy.m in Sources */,
-				C3B08175401E6A590EBF187EC9C0135B /* AHFMEpisode.swift in Sources */,
-				D6679DE2FED7C1077B2700F3B6CACBBD /* AHFMEpisodeHistory.swift in Sources */,
-				335045A54E444279AABA4E8F29B700C9 /* AHFMEpisodeInfo.swift in Sources */,
-				369FD22375EE13FAA34C969A2FB9A40B /* AHFMShow.swift in Sources */,
-				81BE8B3A326F16748BE94822EF453895 /* AHFMSubscribedShow.swift in Sources */,
+				2654EBF76703DBE9E9FB414962BA45FE /* AHDatabase.swift in Sources */,
+				FB7F6146FB91963D61AFA6DABAAF3150 /* AHDataModel-dummy.m in Sources */,
+				45AEA155190F769C06C60040C472A89E /* AHDataModel.swift in Sources */,
+				2F9F1C45FB922FE86B381AEF6038CF3F /* AHDataModelQuery.swift in Sources */,
+				9948B99E63C147C89AF568E060D5E1AB /* AHDB.swift in Sources */,
+				AD618C25DBCBD01E4844DDAFEC37747D /* AHDBColumnInfo.swift in Sources */,
+				C1EBF8CE1C69DE2C1C450325344F2878 /* Migration.swift in Sources */,
+				D1BC0C9BF05B65CAF222AC33FB3D65E3 /* Migrator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A69DACCC0FAD1C67758699339D170BF /* Sources */ = {
+		6D2733F507272302F8E57DD774FC9E23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E1E03B343D650FAB21960C966BF6508 /* AHDatabase.swift in Sources */,
-				678EF48F5AAA0E4954E7D021A930D3C0 /* AHDataModel-dummy.m in Sources */,
-				AACC3982FEE4F254E7646BD26B6EAC1E /* AHDataModel.swift in Sources */,
-				5699C7479E9FA4AE10B12430D68E53A2 /* AHDataModelQuery.swift in Sources */,
-				CDC690AB6CB8755346C02BC8226D0E33 /* AHDBColumnInfo.swift in Sources */,
-				E9E26DD9F794ABC7672B036C9647E7C0 /* Migration.swift in Sources */,
-				9ACDA37192B7F041484AA00B7D05AC0D /* Migrator.swift in Sources */,
-				D262508E418851E973AF9BEAC851B13A /* module.modulemap in Sources */,
-				21C6C69021E324A819DEDB4BDBC8C41A /* module.modulemap in Sources */,
+				7303EF08C783E3CE1072FB4CDA9CEA02 /* AHFMDataCenter-dummy.m in Sources */,
+				286C75F169795FFE7DD9591E818BD2E1 /* AHFMDataCenter.swift in Sources */,
+				19934CD4E7289FF0E84B58B979026295 /* AHFMEpisode.swift in Sources */,
+				7EA5B0EEFD6796490C410CD36F096D64 /* AHFMEpisodeHistory.swift in Sources */,
+				7F63C3E5C662EB3E276F64CC159E2D76 /* AHFMEpisodeInfo.swift in Sources */,
+				53C9FC0D2BE6D0465D1640608A6BF843 /* AHFMShow.swift in Sources */,
+				232C9337BC0B2FCF9B8232C05FACCBC2 /* AHFMSubscribedShow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,13 +638,13 @@
 		AC61897D02AE5EAE0DA8C511FB111D13 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AHDataModel;
-			target = BB57FE047316C9C24FF6ECAFCDF21E50 /* AHDataModel */;
+			target = ED502015755919A139C59C7E499296E5 /* AHDataModel */;
 			targetProxy = 9197C2855A81ED990403F023BEBEC828 /* PBXContainerItemProxy */;
 		};
 		C0DEA15AF3D0B59FBDB9A8E2A7126CE0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AHDataModel;
-			target = BB57FE047316C9C24FF6ECAFCDF21E50 /* AHDataModel */;
+			target = ED502015755919A139C59C7E499296E5 /* AHDataModel */;
 			targetProxy = 03D25E6A390F52A359A2DCDD28E3C709 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -652,7 +652,7 @@
 /* Begin XCBuildConfiguration section */
 		077C7B7B89BEF9DCA3D09ACF919272E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B57C18FE3215AC1C8A495D96BBD7146 /* UIDeviceExtension.xcconfig */;
+			baseConfigurationReference = B02A5AAD32592333B7CDDB5EE075B2FC /* UIDeviceExtension.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -755,6 +755,41 @@
 			};
 			name = Debug;
 		};
+		6D0AF68BA13016FAC63E37F64CE4858E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8877C6894F853340EF00277EF842B705 /* AHDataModel.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AHDataModel/AHDataModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHDataModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AHDataModel/AHDataModel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AHDataModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -796,41 +831,6 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		72F0D3D084A0DA239B5A847FB625BD9B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6146B6BE699231C0F3CEBCB11EE7D0F /* AHDataModel.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AHDataModel/AHDataModel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AHDataModel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AHDataModel/AHDataModel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AHDataModel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -946,7 +946,7 @@
 		};
 		94126CE1B204EBFA4EF16B78A1371061 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B57C18FE3215AC1C8A495D96BBD7146 /* UIDeviceExtension.xcconfig */;
+			baseConfigurationReference = B02A5AAD32592333B7CDDB5EE075B2FC /* UIDeviceExtension.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1067,16 +1067,16 @@
 			};
 			name = Debug;
 		};
-		E646F080016AF3BA1F5C5BC0A88EB9CC /* Debug */ = {
+		D65FD38E2152CC0B8FD9743494D2A4B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6146B6BE699231C0F3CEBCB11EE7D0F /* AHDataModel.xcconfig */;
+			baseConfigurationReference = 8877C6894F853340EF00277EF842B705 /* AHDataModel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1089,18 +1089,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AHDataModel/AHDataModel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = AHDataModel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1123,6 +1123,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		288948AAA223D3567A10D5AFDD0BB8D3 /* Build configuration list for PBXNativeTarget "AHDataModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0AF68BA13016FAC63E37F64CE4858E /* Debug */,
+				D65FD38E2152CC0B8FD9743494D2A4B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1137,15 +1146,6 @@
 			buildConfigurations = (
 				81157DC3AE9DADF26D41FB93D982F0D4 /* Debug */,
 				8C69E8809FB8F5BB55CA8851427C13B5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		922D614F225F834AC3872BBFCA7EA506 /* Build configuration list for PBXNativeTarget "AHDataModel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E646F080016AF3BA1F5C5BC0A88EB9CC /* Debug */,
-				72F0D3D084A0DA239B5A847FB625BD9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

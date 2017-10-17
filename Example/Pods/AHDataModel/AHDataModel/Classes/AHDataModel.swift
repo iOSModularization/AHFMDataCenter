@@ -7,169 +7,75 @@
 //
 
 
-public protocol AHDB {
-    static func databaseFilePath() -> String
-}
-extension AHDB {
-    
-    internal static var db: AHDatabase? {
-        let dbPath: String = Self.databaseFilePath()
-        do {
-            let db = try AHDatabase.connection(path: dbPath)
-            return db
-        }catch _ {
-            return nil
-        }
-    }
-    
-    /// Any struct/class can call this method to do transaction, regardless what model it is and what models will be involved in the transaction.
-    @discardableResult
-    public static func transaction(_ tasks: () throws ->Void) rethrows -> Bool {
-        guard let db = Self.db else {
-            fatalError("Internal error, database connection does not exist!")
-        }
-        
-        guard beginExclusive() else {
-            return false
-        }
-        
-        
-        try tasks()
-        
-        guard commit() else {
-            do {
-                try db.rollback()
-            } catch let error {
-                print("rollback error after commit failed:\(error)")
-            }
-            return false
-        }
-        
-        return true
-    }
-    
-    /// read/write exclusively without other process or thread to read or write
-    @discardableResult
-    public static func beginExclusive() -> Bool {
-        guard let db = Self.db else {
-            fatalError("Internal error, database connection does not exist!")
-        }
-        
-        do {
-            try db.beginExclusive()
-            return true
-        } catch let error {
-            print("beginExclusive error:\(error)")
-        }
-        return false
-    }
-    
-    @discardableResult
-    public static func rollback() -> Bool {
-        guard let db = Self.db else {
-            fatalError("Internal error, database connection does not exist!")
-        }
-        
-        do {
-            try db.rollback()
-            return true
-        } catch let error {
-            print("rollback error:\(error)")
-        }
-        return false
-    }
-    
-    @discardableResult
-    public static func commit() -> Bool {
-        guard let db = Self.db else {
-            fatalError("Internal error, database connection does not exist!")
-        }
-        
-        do {
-            try db.commit()
-            return true
-        } catch let error {
-            print("commit error:\(error)")
-        }
-        return false
-    }
-}
-
-private let ColumnInfoKey = "ColumnInfoKey"
-
 /// Methods to be conformed.
 /// Note: You should always specify primary key in columnInfo() since currently the protocol only supports models with primary keys.
 public protocol AHDataModel: AHDB {
     static func columnInfo() -> [AHDBColumnInfo]
-//    static func renameProperties() -> [String: String]
     
-    init(with dict: [String: Any?])
+    init(with dict: [String: Any])
     
     static func tableName() -> String
-    
 
-    
-    
-    /// return [propertyStr: value], propertyStr is the property/column names used in both the object(or struct) and the database. 
+    /// return [propertyStr: value], propertyStr is the property/column names used in both the object(or struct) and the database.
     /// So the Swift property names and dtabase column names should be the same.
     func toDict() -> [String: Any]
     
 }
 
 //MARK:- Model Instance Methods
-extension AHDataModel {
-    @discardableResult
-    public func delete() -> Bool {
-        do {
-            try Self.delete(model: self)
-        } catch _ {
-            return false
-        }
-        return true
-    }
-    
-    @discardableResult
-    public func save() -> Bool {
-        do {
-            // If update failed, then go insert
-            if Self.modelExists(model: self) {
-                try Self.update(model: self)
-            }else {
-                try Self.insert(model: self)
-            }
-        } catch _ {
-            return false
-        }
-        return true
-        
-    }
-    
-    /// The model passed in is the one overriding this model.
-    /// Return a merged version of the two models.
-    /// If shouldBeOverrided is true, this model instance's properties will be the same as the other one, which is really unnecessary, you should make a copy of it instead.
-    /// shouldBeOverrided is false, this model's nil properties will be set if the other model's.
-    /// shouldBeOverrided is false by default.
-    @discardableResult
-    public func merge(model: Self, shouldBeOverrided: Bool = false) -> Self{
-        guard self.primaryKey() == model.primaryKey() else {
-            preconditionFailure("Both models must have the same primary key")
-        }
-        let thisAttributes = self.attributes()
-        let thatDict = model.toDict()
-        
-        var newAttributes = [AHDBAttribute]()
-        for attr in thisAttributes {
-            var attr_M = attr
-            if attr_M.value == nil {
-                attr_M.value = thatDict[attr.key]
-            }
-            newAttributes.append(attr_M)
-        }
-        let dict = Self.rowToDict(attributes: newAttributes)
-        let model = Self(with: dict)
-        return model
-    }
-}
+//extension AHDataModel {
+//    @discardableResult
+//    public func delete() -> Bool {
+//        do {
+//            try Self.delete(model: self)
+//        } catch _ {
+//            return false
+//        }
+//        return true
+//    }
+//
+//    @discardableResult
+//    public func save() -> Bool {
+//        do {
+//            // If update failed, then go insert
+//            if Self.modelExists(model: self) {
+//                try Self.update(model: self)
+//            }else {
+//                try Self.insert(model: self)
+//            }
+//        } catch _ {
+//            return false
+//        }
+//        return true
+//
+//    }
+//
+//    /// The model passed in is the one overriding this model.
+//    /// Return a merged version of the two models.
+//    /// If shouldBeOverrided is true, this model instance's properties will be the same as the other one, which is really unnecessary, you should make a copy of it instead.
+//    /// shouldBeOverrided is false, this model's nil properties will be set if the other model's.
+//    /// shouldBeOverrided is false by default.
+//    @discardableResult
+//    public func merge(model: Self, shouldBeOverrided: Bool = false) -> Self{
+//        guard self.primaryKey() == model.primaryKey() else {
+//            preconditionFailure("Both models must have the same primary key")
+//        }
+//        let thisAttributes = self.attributes()
+//        let thatDict = model.toDict()
+//
+//        var newAttributes = [AHDBAttribute]()
+//        for attr in thisAttributes {
+//            var attr_M = attr
+//            if attr_M.value == nil {
+//                attr_M.value = thatDict[attr.key]
+//            }
+//            newAttributes.append(attr_M)
+//        }
+//        let dict = Self.rowToDict(attributes: newAttributes)
+//        let model = Self(with: dict)
+//        return model
+//    }
+//}
 
 
 //MARK:- Query
@@ -179,7 +85,7 @@ extension AHDataModel {
         guard let db = Self.db else {
             fatalError("Internal error: db doesn't exist!!")
         }
-        setup()
+        checkDatabaseSetup()
         let tableName = Self.tableName()
         let sql: String = "SELECT * FROM \(tableName) WHERE "
         let (newSql, attributes) = AHDBHelper.decodeFilter(sql, property, Operator, value)
@@ -194,9 +100,9 @@ extension AHDataModel {
         guard let db = Self.db else {
             fatalError("Internal error: db doesn't exist!!")
         }
-        setup()
+        checkDatabaseSetup()
         let tableName = Self.tableName()
-        let sql = "SELECT * FROM \(tableName)"
+        let sql = "SELECT * FROM \(tableName) "
         let query = AHDataModelQuery<Self>(rawSQL: sql, db: db)
         query.attributes = []
         return query
@@ -246,7 +152,7 @@ extension AHDataModel {
         guard let db = Self.db else {
             return nil
         }
-        setup()
+        checkDatabaseSetup()
         guard let keyName = primaryKeyName() else {return nil}
         let type = AHDBHelper.getValueType(value: primaryKey)
         let keyAttr = AHDBAttribute(key: keyName, value: primaryKey, type: type)
@@ -275,15 +181,24 @@ extension AHDataModel {
         guard let db = Self.db else {
             throw AHDBError.internal(message: "Internal error, database connection does not exist!")
         }
-        setup()
+        checkDatabaseSetup()
+        checkWriteQueue()
         try db.insert(table: Self.tableName(), bindings: attributes)
     }
     
-    /// If return false, there must be at least 1 error. not a transaction yet!
-    public static func insert(models: [Self]) throws {
+    /// Return those unsuccessfully inserted ones.
+    /// NOTE: This method surpresses exceptions!!
+    @discardableResult
+    public static func insert(models: [Self]) -> [Self] {
+        var unsuccessful = [Self]()
         for model in models {
-            try insert(model: model)
+            do {
+                try insert(model: model)
+            } catch {
+                unsuccessful.append(model)
+            }
         }
+        return unsuccessful
     }
 }
 
@@ -294,7 +209,8 @@ extension AHDataModel {
             throw AHDBError.internal(message: "Internal error, database connection does not exist!")
         }
         
-        setup()
+        checkDatabaseSetup()
+        checkWriteQueue()
         
         let attributes = model.attributes()
         if let primaryKey = model.primaryKey() {
@@ -304,11 +220,19 @@ extension AHDataModel {
         }
     }
     
-    /// not a transaction yet!
-    public static func update(models: [Self]) throws {
+    /// Return those unsuccessfully updated ones.
+    /// NOTE: This method surpresses exceptions!!
+    @discardableResult
+    public static func update(models: [Self]) -> [Self] {
+        var unsuccessful = [Self]()
         for model in models {
-            try update(model: model)
+            do {
+                try update(model: model)
+            } catch  {
+                unsuccessful.append(model)
+            }
         }
+        return unsuccessful
     }
     
     /// Update specific properties of this model into the database
@@ -317,7 +241,8 @@ extension AHDataModel {
         guard let db = Self.db else {
             throw AHDBError.internal(message: "Internal error, database connection does not exist!")
         }
-        setup()
+        checkDatabaseSetup()
+        checkWriteQueue()
         
         let keys = model.toDict().keys
         for key in properties {
@@ -346,7 +271,8 @@ extension AHDataModel {
         guard let db = Self.db else {
             throw AHDBError.internal(message: "Internal error, database connection does not exist!")
         }
-        setup()
+        checkDatabaseSetup()
+        checkWriteQueue()
         
         guard let keyName = primaryKeyName() else {return}
         let type = AHDBHelper.getValueType(value: primaryKey)
@@ -386,7 +312,8 @@ extension AHDataModel {
         guard let db = Self.db else {
             throw AHDBError.internal(message: "Internal error, database connection does not exist!")
         }
-        setup()
+        checkDatabaseSetup()
+        checkWriteQueue()
         
         if let primaryKey = model.primaryKey() {
             try db.delete(tableName: Self.tableName(), primaryKey: primaryKey)
@@ -395,17 +322,25 @@ extension AHDataModel {
         }
     }
     
-    public static func delete(models: [Self]) throws {
+    /// Return unsuccessfully deleted ones.
+    public static func delete(models: [Self]) -> [Self] {
+        var arr = [Self]()
         for model in models {
-            try delete(model: model)
+            do {
+                try delete(model: model)
+            }catch _ {
+                arr.append(model)
+            }
         }
+        return arr
     }
     
     public static func delete(byPrimaryKey primaryKey: Any) throws {
         guard let db = Self.db else {
             throw AHDBError.internal(message: "Internal error, database connection does not exist!")
         }
-        setup()
+        checkDatabaseSetup()
+        checkWriteQueue()
         
         guard let keyName = primaryKeyName() else {return}
         let type = AHDBHelper.getValueType(value: primaryKey)
@@ -415,10 +350,17 @@ extension AHDataModel {
         try db.delete(tableName: tableName, primaryKey: keyAttr)
     }
     
-    public static func delete(byPrimaryKeys primaryKeys: [Any]) throws {
+    /// Returns unsuccessfully deleted primary keys
+    public static func delete(byPrimaryKeys primaryKeys: [Any]) -> [Any] {
+        var failedPKs = [Any]()
         for pk in primaryKeys {
-            try delete(byPrimaryKey: pk)
+            do {
+                try delete(byPrimaryKey: pk)
+            }catch _ {
+                failedPKs.append(pk)
+            }
         }
+        return failedPKs
     }
     
     
@@ -430,6 +372,8 @@ extension AHDataModel {
         guard db.tableExists(tableName: Self.tableName()) else {
             return
         }
+        
+        checkWriteQueue()
         
         try db.deleteTable(name: Self.tableName())
         Self.clearArchivedColumnInfo()
@@ -502,7 +446,7 @@ extension AHDataModel {
     }
     
     fileprivate static func checkOperator(_ operator: String) {
-        var todo: Any?
+        // TODO: complete SQL operators
     }
     
     
@@ -550,7 +494,7 @@ extension AHDataModel {
 //MARK:- Setup
 extension AHDataModel {
     /// Check if the table is created already or not
-    fileprivate static func setup() {
+    fileprivate static func checkDatabaseSetup() {
         if let isSetup = AHDBHelper.isSetupDict[Self.modelName()],
             isSetup == true {
             return
@@ -567,9 +511,7 @@ extension AHDataModel {
             
             
             //2. setup
-            DispatchQueue.main.async {
-                AHDBHelper.isSetupDict[Self.modelName()] = true
-            }
+            AHDBHelper.isSetupDict[Self.modelName()] = true
             return
         }else{
             // this is for first launch
@@ -631,6 +573,10 @@ internal struct AHDBHelper {
             type = .integer
         }else if value is String {
             type = .text
+        }else if value is Bool {
+            type = .integer
+        }else {
+            return nil
         }
         return type
     }
@@ -644,7 +590,11 @@ internal struct AHDBHelper {
             if Operator.lowercased().contains("in") {
                 for (i,value) in valueArr.enumerated() {
                     if i == 0 {
-                        sql += "(?,"
+                        if valueArr.count == 1 {
+                            sql += "(?)"
+                        }else{
+                            sql += "(?,"
+                        }
                     }else if i == valueArr.count - 1 {
                         sql += "?)"
                     }else{
